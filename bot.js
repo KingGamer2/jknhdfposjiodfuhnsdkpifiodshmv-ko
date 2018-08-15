@@ -296,7 +296,7 @@ message.author.sendEmbed(embed)
 }
 });
 client.on('message', msg => {
-  if (msg.content === '-mhelp') {
+  if (msg.content === '%mhelp') {
     msg.reply(':envelope: | تم ارسال الرسالة في الخاص');
   }
 });
