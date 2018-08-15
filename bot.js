@@ -263,27 +263,27 @@ client.on("message", message => {
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 
-💎『Music Commands』💎
+💎『اوامر الموسيقى』💎
 
-💎prefix 『-』 
+💎prefix 『%』 
                         
-💎-play 『to play song』                      
+💎%play 『لتشغيل اغنية』                      
 
-💎-join 『Enter your audio room』  
+💎%join 『لاضافة البوت لرومك』  
 
-💎-skip 『Skip the song』
+💎%skip 『لتخطي الاغنية』
 
-💎-add 『add music to queue』
+💎%add 『لاضافة اغنية الى قائمة تشغيل』
 
-💎-pause 『Pause the song』
+💎%pause 『لايقاف الاغنية』
 
-💎-queue 『Show playlist』
+💎%queue 『لعرض  قائمة الاغنية』
 
-💎-np 『Show the song you are currently playing』
+💎%np 『لاطهار اسم الاغنية المشغلة حاليا』
 
-💎-disconnect 『Exit bot from audio room』
+💎%disconnect 『لقطع اتصال البوت بلروم』
 
-💎-help 『General Commands』
+💎%help 『للاوامر العامة』
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
     
@@ -297,7 +297,7 @@ message.author.sendEmbed(embed)
 });
 client.on('message', msg => {
   if (msg.content === '-mhelp') {
-    msg.reply(':envelope: | Message sent in private');
+    msg.reply(':envelope: | تم ارسال الرسالة في الخاص');
   }
 });
 
