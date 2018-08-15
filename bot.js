@@ -255,7 +255,7 @@ function play(guild, song) {
 
 
 client.on("message", message => {
- if (message.content === "-mhelp") {
+ if (message.content === "%mhelp") {
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
