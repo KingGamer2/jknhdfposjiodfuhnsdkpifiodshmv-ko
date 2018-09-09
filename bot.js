@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "%";
+const prefix = "!";
 /////////////////////////
 ////////////////////////
 //////////////////////
@@ -254,52 +254,6 @@ function play(guild, song) {
 
 
 
-client.on("message", message => {
- if (message.content === "%mhelp") {
-  const embed = new Discord.RichEmbed() 
-      .setColor("#ffff00")
-      .setThumbnail(message.author.avatarURL)
-      .setDescription(`
-
-● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
-
-💎『اوامر الموسيقى』💎
-
-💎prefix 『%』 
-                        
-💎%play 『لتشغيل اغنية』                      
-
-💎%join 『لاضافة البوت لرومك』  
-
-💎%skip 『لتخطي الاغنية』
-
-💎%add 『لاضافة اغنية الى قائمة تشغيل』
-
-💎%pause 『لايقاف الاغنية』
-
-💎%queue 『لعرض  قائمة الاغنية』
-
-💎%np 『لاطهار اسم الاغنية المشغلة حاليا』
-
-💎%disconnect 『لقطع اتصال البوت بلروم』
-
-💎%help 『للاوامر العامة』
-
-● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
-    
-	`)
-  
-  
-  
-message.author.sendEmbed(embed)
-
-}
-});
-client.on('message', msg => {
-  if (msg.content === '%mhelp') {
-    msg.reply(':envelope: | تم ارسال الرسالة في الخاص');
-  }
-});
 
 client.login(process.env.BOT_TOKEN);
 
