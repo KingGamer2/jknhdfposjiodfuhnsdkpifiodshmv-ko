@@ -253,6 +253,11 @@ function play(guild, song) {
 }
 
 
+client.on('message', message => {
+ if(message.content.startsWith(prefix + "come")) {
+message.member.voiceChannel.join();
+}
+});
 
 
 client.login(process.env.BOT_TOKEN);
